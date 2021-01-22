@@ -36,4 +36,9 @@ class BreweryClientTest {
         client.updateBeer(UUID.randomUUID(), beerDto);
         //assert missing? not a test!
     }
+
+    @Test
+    void testDeleteBeer() {
+        client.deleteBeer(UUID.randomUUID());
+    }
 }
